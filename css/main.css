@@ -2783,36 +2783,36 @@ input:-webkit-autofill {
   }
 }
 .tariff__card--stairs-1::before {
-  background: url("../../img/avalanche/01.png") 0 0/cover no-repeat;
+  background: url("../img/avalanche/01.png") 0 0/cover no-repeat;
 }
 .tariff__card--stairs-2::before {
   top: -3.75rem;
   right: -7.5rem;
-  background: url("../../img/avalanche/02.png") 0 0/cover no-repeat;
+  background: url("../img/avalanche/02.png") 0 0/cover no-repeat;
 }
 .tariff__card--stairs-3::before {
-  background: url("../../img/avalanche/03.png") 0 0/cover no-repeat;
+  background: url("../img/avalanche/03.png") 0 0/cover no-repeat;
 }
 .tariff__card--stairs-4::before {
-  background: url("../../img/avalanche/04.png") 0 0/cover no-repeat;
+  background: url("../img/avalanche/04.png") 0 0/cover no-repeat;
   -webkit-transform: rotate(-129deg);
   -ms-transform: rotate(-129deg);
   transform: rotate(-129deg);
 }
 .tariff__card--personal::before {
-  background: url("../../img/сrowdfunding/personal.png") 0 0/cover no-repeat;
+  background: url("../img/сrowdfunding/personal.png") 0 0/cover no-repeat;
 }
 .tariff__card--basic::before {
-  background: url("../../img/сrowdfunding/basic.png") 0 0/cover no-repeat;
+  background: url("../img/сrowdfunding/basic.png") 0 0/cover no-repeat;
 }
 .tariff__card--premium::before {
-  background: url("../../img/сrowdfunding/premium.png") 0 0/cover no-repeat;
+  background: url("../img/сrowdfunding/premium.png") 0 0/cover no-repeat;
 }
 .tariff__card--vip {
   background: linear-gradient(195deg, #f79c03 19.86%, #965001 64.5%);
 }
 .tariff__card--vip::before {
-  background: url("../../img/сrowdfunding/vip.png") 0 0/cover no-repeat;
+  background: url("../img/сrowdfunding/vip.png") 0 0/cover no-repeat;
 }
 .tariff__body {
   display: -webkit-box;
