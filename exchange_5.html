@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exchange 5</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+
+  <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
+
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#dashboard"></use>
+          </svg>
+          <p class="nav__link-text">Dashboard</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#crowdfunding"></use>
+          </svg>
+          <p class="nav__link-text">Crowdfunding</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#avalanche"></use>
+          </svg>
+          <p class="nav__link-text">Avalanche Club</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#exchange"></use>
+          </svg>
+          <p class="nav__link-text">Exchange</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav__list nav__list--settings">
+      <li class="nav__item nav__item--account">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#settings"></use>
+          </svg>
+          <p class="nav__link-text">Settings</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+
+        </a>
+      </li>
+    </ul>
+
+  </nav>
+  <div class="sidebar__socials">
+            <ul class="socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#medium"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#reddit"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#crunchbase"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#discord"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+  </div>
+</aside>
+
+    <div class="page">
+      <header class="header">
+        <a href="#" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
+        <div class="header__text-block">
+          <h1 class="header__title">Exchange</h1>
+          <p class="header__text">Sapien elit malesuada nibh enim amet nisi. Diam sagittis nec odio mauris nisl rhoncus
+            dis. Habitasse duis venenatis nisl viverra eu. Et id nunc mattis quam sapien egestas arcu. Tellus sed at
+            eget cursus.</p>
+        </div>
+
+        <div class="header__actions">
+          <button class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+          </button>
+          <button class="header__currency-selector currency-selector">
+            <span class="currency-selector__text">
+              BRT
+            </span>
+            <svg class="currency-selector__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <button class="header__profile profile">
+            <div class="profile__user">
+              <div class="profile__ava">
+                <img class="profile__img" src="./img/person.png" alt="ava">
+              </div>
+            </div>
+            <div class="profile__info">
+              <div class="profile__name">John Carter</div>
+              <div class="profile__settings">Account settings</div>
+            </div>
+            <svg class="profile__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <main class="main ">
+        <div class="exchange">
+          <div class="exchange__order hidden">
+            <h2 class="exchange__order-title">Exchange Order</h2>
+            <form action="" class="exchange__order-form form">
+              <div class="order-form__body">
+                <div class="order-form__block">
+                  <h3 class="order-form__title">General Information</h3>
+                  <div class="order-form__items">
+                    <div class="order-form__item form__item">
+                      <div class="order-form__input form__input input">
+                        <input type="text" name="" value="" placeholder="Country" class="input__control">
+                      </div>
+                    </div>
+                    <div class="order-form__item form__item">
+                      <div class="order-form__input form__input input">
+                        <input type="text" name="" value="" placeholder="Traders & Companies" class="input__control">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-form__block">
+                  <h3 class="order-form__title">Token Information</h3>
+                  <div class="order-form__items">
+                    <div class="order-form__item form__item">
+                      <button class="form__control form-control ">
+                        <p class="form-control__text">Asset</p>
+                        <svg class="form-control__arrow">
+                          <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="order-form__item form__item">
+                      <button class="form__control form-control ">
+                        <p class="form-control__text">Network</p>
+                        <svg class="form-control__arrow">
+                          <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="order-form__item form__item">
+                      <div class="order-form__input form__input input">
+                        <input type="text" name="" value="" placeholder="Amount" class="input__control">
+                      </div>
+                      <span class="form__item-text-bottom">Balance: 1 000 000 BRT</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="order-form__button button">Create Order</button>
+            </form>
+          </div>
+          <div class="exchange__order exchange__order-actions">
+            <button class=" modal__close js-modal-close" aria-label="close modal">
+              <svg class="modal__close-icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <h2 class="exchange__order-title exchange__order-title--actions">Order <span>#409489022</span></h2>
+            <ul class="exchange__order-details order-details">
+              <li class="order-details__item order-details__item--header">
+                <h4 class="order-details__title">You Pay</h4>
+                <span class="order-details__value">1000 USDT</span>
+              </li>
+              <li class="order-details__item order-details__item--header">
+                <h4 class="order-details__title">Fee:</h4>
+                <span class="order-details__value">30 TRX</span>
+              </li>
+              <li class="order-details__item order-details__item--header">
+                <h4 class="order-details__title">You Get:</h4>
+                <span class="order-details__value">10 000 BRT</span>
+              </li>
+              <li class="order-details__item">
+                <h4 class="order-details__title">Trader/Company:</h4>
+                <span class="order-details__value">Sh. Mansur Exchange</span>
+              </li>
+              <li class="order-details__item">
+                <h4 class="order-details__title">Date/Time:
+                </h4>
+                <span class="order-details__value">12.01.2025</span>
+              </li>
+            </ul>
+            <div class="exchange__order-info">
+              Coins will arrive within 15 minutes, if this does not happen, please contact support
+            </div>
+            <div class="exchange__order-buttons">
+              <button class="exchange__order-btn">Need Support</button>
+              <button class="exchange__order-btn">Check Wallet</button>
+            </div>
+            <button class="exchange__order-button button">I Paid</button>
+          </div>
+          <div class="exchange__chat">
+            <div class="chat">
+              <div class="chat__header">
+                <div class="chat__header-profile profile">
+                  <div class="profile__user online">
+                    <div class="profile__ava">
+                      <img class="profile__img" src="./img/person-2.png" alt="ava">
+                    </div>
+                  </div>
+                  <div class="profile__info">
+                    <div class="profile__name">Sophie Moore</div>
+                    <div class="profile__settings">@sophiemoore</div>
+                  </div>
+                </div>
+              </div>
+              <div class="chat__body">
+                <div class="chat__messages">
+                  <ul class="chat__message chat__message--support">
+                    <li class="chat__message-item">
+                      <div class="chat__message-ava">
+                        <div class="profile__user online">
+                          <div class="profile__ava ">
+                            <img class="profile__img" src="./img/person-2.png" alt="ava">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat__message-content">
+                        <ul class="chat__message-block">
+                          <li class="chat__message-text">Hello John! Hope you’re doing well. I need your help with some
+                            reports, are you available for a call later today?</li>
+                          <li class="chat__message-text">Thank you</li>
+                        </ul>
+                        <div class="chat__message-time">11:36 AM</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chat__messages">
+                  <ul class="chat__message chat__message--user">
+                    <li class="chat__message-item">
+                      <div class="chat__message-content">
+                        <ul class="chat__message-block">
+                          <li class="chat__message-text">Hey Sophie! How are you?</li>
+                          <li class="chat__message-text">For sure, I’ll be free after mid-day, let me know what time
+                            works for you</li>
+                        </ul>
+                        <div class="chat__message-time">11:41 AM</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <form class="chat__input-container">
+
+                <textarea class="chat__input" placeholder="Type a message"></textarea>
+                <div class="chat__input-actions">
+                  <button class="chat__input-btn ">
+                    <img class="chat__input-icon chat__input-icon--emoji" src="./img/svg/smile.svg" alt="">
+                  </button>
+                  <button class="chat__input-btn">
+                    <img class="chat__input-icon chat__input-icon--mention" src="./img/svg/clip.svg" alt="">
+                  </button>
+                  <button type="submit" class="chat__input-button button">Send now</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

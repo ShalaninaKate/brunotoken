@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crowdfunding</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+
+  <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
+
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#dashboard"></use>
+          </svg>
+          <p class="nav__link-text">Dashboard</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#crowdfunding"></use>
+          </svg>
+          <p class="nav__link-text">Crowdfunding</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#avalanche"></use>
+          </svg>
+          <p class="nav__link-text">Avalanche Club</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#exchange"></use>
+          </svg>
+          <p class="nav__link-text">Exchange</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav__list nav__list--settings">
+      <li class="nav__item nav__item--account">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#settings"></use>
+          </svg>
+          <p class="nav__link-text">Settings</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+
+        </a>
+      </li>
+    </ul>
+
+  </nav>
+  <div class="sidebar__socials">
+            <ul class="socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#medium"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#reddit"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#crunchbase"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#discord"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+  </div>
+</aside>
+
+    <div class="page">
+      <header class="header header--crowdfunding">
+        <a href="#" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
+        <div class="header__text-block">
+          <h1 class="header__title">Crowdfunding</h1>
+          <p class="header__text">This service is provided only in the BRT cryptocurrency. To participate in
+            crowdfunding, the User must either already have BRT, or purchase it on the Exchange page, or exchange (SWAP)
+            one of the other cryptocurrencies for BRT.</p>
+        </div>
+
+        <div class="header__actions">
+          <button class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+          </button>
+          <button class="header__currency-selector currency-selector">
+            <span class="currency-selector__text">
+              BRT
+            </span>
+            <svg class="currency-selector__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <button class="header__profile profile">
+            <div class="profile__user">
+              <div class="profile__ava">
+                <img class="profile__img" src="./img/person.png" alt="ava">
+              </div>
+            </div>
+            <div class="profile__info">
+              <div class="profile__name">John Carter</div>
+              <div class="profile__settings">Account settings</div>
+            </div>
+            <svg class="profile__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <main class="main crowdfunding">
+        <ul class="crowdfunding__tariff tariff">
+          <li class="tariff__card tariff__card--personal">
+            <div class="tariff__body">
+              <div class="tariff__header">
+                <h2 class="tariff__title">Personal</h2>
+                <p class="tariff__descr">0.8% per month, <br> earn up to 9,6% a year</p>
+                <button class="tariff__refund">Refund of all Amount</button>
+              </div>
+              <ul class="tariff__descr-items">
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon">
+                  <p class="tariff__descr-text">Пользователь вносит (Депозит) некую сумму в BRT.
+                  </p>
+                </li>
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon tariff__descr-icon--down">
+                  <p class="tariff__descr-text">Пользователь имеет право вернуть всю сумму на свой баланс в любое
+                    время.
+                  </p>
+                </li>
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/commission.svg" alt="icon" class="tariff__descr-icon">
+                  <p class="tariff__descr-text">Комиссия: При возврате суммы взимается комиссия (Gas fee) в размере
+                    0,02 BRT.
+                  </p>
+                </li>
+              </ul>
+              <button class="tariff__button button">Buy Personal</button>
+            </div>
+          </li>
+          <li class="tariff__card tariff__card--basic">
+            <div class="tariff__body">
+              <div class="tariff__header">
+                <h2 class="tariff__title">Basic</h2>
+                <p class="tariff__descr">1.2% per month, <br>
+                  earn up to 14,4% a year</p>
+              </div>
+              <ul class="tariff__descr-items">
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon">
+                  <p class="tariff__descr-text">Депозит вносится на срок 3 месяца
+                    (91 день)
+                  </p>
+                </li>
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon tariff__descr-icon--down">
+                  <p class="tariff__descr-text">Депозит не может быть возвращен на баланс Пользователя раньше срока.
+                  </p>
+                </li>
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/commission.svg" alt="icon" class="tariff__descr-icon">
+                  <p class="tariff__descr-text">Процесс возврата: По прошествии 91 дня вся сумма Депозита возвращается
+                    на баланс Пользователя автоматически.
+                  </p>
+                </li>
+              </ul>
+              <button class="tariff__button button">Buy Basic</button>
+            </div>
+
+          </li>
+          <li class="tariff__card tariff__card--premium">
+            <div class="tariff__body">
+              <div class="tariff__header">
+                <h2 class="tariff__title">Premium</h2>
+                <p class="tariff__descr">1.4% per month, <br>
+                  earn up to 16,8% a year</p>
+              </div>
+              <ul class="tariff__descr-items">
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon">
+                  <p class="tariff__descr-text">Депозит вносится на срок 6 месяцев
+                    (183 дня)
+                  </p>
+                </li>
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon tariff__descr-icon--down">
+                  <p class="tariff__descr-text">Депозит не может быть возвращен на баланс Пользователя раньше
+                    срока.
+                  </p>
+                </li>
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/commission.svg" alt="icon" class="tariff__descr-icon">
+                  <p class="tariff__descr-text">Процесс возврата: По прошествии 183 дней вся сумма Депозита
+                    возвращается на баланс Пользователя автоматически.
+                  </p>
+                </li>
+              </ul>
+              <button class="tariff__button button">Buy Premium </button>
+            </div>
+
+          </li>
+          <li class="tariff__card tariff__card--vip">
+            <div class="tariff__body">
+              <div class="tariff__header">
+                <h2 class="tariff__title">VIP</h2>
+                <p class="tariff__descr">1.6% per month, <br>
+                  earn up to 19,2% a year</p>
+              </div>
+              <ul class="tariff__descr-items">
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon">
+                  <p class="tariff__descr-text">Депозит вносится на срок 6 месяцев
+                    (183 дня)
+                  </p>
+                </li>
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon tariff__descr-icon--down">
+                  <p class="tariff__descr-text">Депозит не может быть возвращен на баланс Пользователя раньше
+                    срока.
+                  </p>
+                </li>
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/commission.svg" alt="icon" class="tariff__descr-icon">
+                  <p class="tariff__descr-text">Процесс возврата: По прошествии 183 дней вся сумма Депозита
+                    возвращается на баланс Пользователя автоматически.
+                  </p>
+                </li>
+              </ul>
+              <button class="tariff__button button button--blue">Buy VIP </button>
+            </div>
+
+          </li>
+        </ul>
+
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

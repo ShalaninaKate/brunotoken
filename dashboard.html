@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+
+  <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
+
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#dashboard"></use>
+          </svg>
+          <p class="nav__link-text">Dashboard</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#crowdfunding"></use>
+          </svg>
+          <p class="nav__link-text">Crowdfunding</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#avalanche"></use>
+          </svg>
+          <p class="nav__link-text">Avalanche Club</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#exchange"></use>
+          </svg>
+          <p class="nav__link-text">Exchange</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav__list nav__list--settings">
+      <li class="nav__item nav__item--account">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#settings"></use>
+          </svg>
+          <p class="nav__link-text">Settings</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+
+        </a>
+      </li>
+    </ul>
+
+  </nav>
+  <div class="sidebar__socials">
+            <ul class="socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#medium"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#reddit"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#crunchbase"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#discord"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+  </div>
+</aside>
+
+    <div class="page">
+      <header class="header">
+        <a href="#" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
+        <div class="header__text-block">
+          <h1 class="header__title">Dashboard</h1>
+          <p class="header__text">We support: USDT TRON, USDT BSC, TRX, BNB, BTC, BRT</p>
+        </div>
+
+        <div class="header__actions">
+          <button class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+          </button>
+          <button class="header__currency-selector currency-selector">
+            <span class="currency-selector__text">
+              BRT
+            </span>
+            <svg class="currency-selector__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <button class="header__profile profile">
+            <div class="profile__user">
+              <div class="profile__ava">
+                <img class="profile__img" src="./img/person.png" alt="ava">
+              </div>
+            </div>
+            <div class="profile__info">
+              <div class="profile__name">John Carter</div>
+              <div class="profile__settings">Account settings</div>
+            </div>
+            <svg class="profile__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="main dashboard">
+        <div class="dashboard__balance-info balance-info">
+          <div class="balance-info__item">
+            <div class="balance-info__top">
+              <svg class="balance-info__icon balance-info__icon--total">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+              <label class="balance-info__label">Total Balance</label>
+              <button class="balance-info__btn">
+                <svg class="balance-info__dots">
+                  <use xlink:href="img/sprite.svg#dots"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="balance-info__amount amount">
+              <div class="amount__text">1 000 000
+                <span class="amount__currency">BRT</span>
+              </div>
+              <div class="amount__change amount__change--up">
+
+                <span class="amount__change-amount">28.4%</span>
+                <svg class="amount__change-icon">
+                  <use xlink:href="img/sprite.svg#arrow-change"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="balance-info__item">
+            <div class="balance-info__top">
+              <svg class="balance-info__icon balance-info__icon--depo">
+                <use xlink:href="img/sprite.svg#depo"></use>
+              </svg>
+              <label class="balance-info__label">In Depo</label>
+              <button class="balance-info__btn">
+                <svg class="balance-info__dots">
+                  <use xlink:href="img/sprite.svg#dots"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="balance-info__amount amount">
+              <div class="amount__text">500 000
+                <span class="amount__currency">BRT</span>
+              </div>
+              <div class="amount__change amount__change--down">
+                <span class="amount__change-amount">28.4%</span>
+                <svg class="amount__change-icon">
+                  <use xlink:href="img/sprite.svg#arrow-change"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="balance-info__item">
+            <div class="balance-info__top">
+              <svg class="balance-info__icon balance-info__icon--crowdfunding">
+                <use xlink:href="img/sprite.svg#bag"></use>
+              </svg>
+              <label class="balance-info__label">Crowdfunding dividends</label>
+              <button class="balance-info__btn">
+                <svg class="balance-info__dots">
+                  <use xlink:href="img/sprite.svg#dots"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="balance-info__amount amount">
+              <div class="amount__text">80 000
+                <span class="amount__currency">BRT</span>
+              </div>
+              <div class="amount__change amount__change--up">
+                <span class="amount__change-amount">28.4%</span>
+                <svg class="amount__change-icon">
+                  <use xlink:href="img/sprite.svg#arrow-change"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="balance-info__item">
+            <div class="balance-info__top">
+              <svg class="balance-info__icon balance-info__icon--wallet">
+                <use xlink:href="img/sprite.svg#exchange"></use>
+              </svg>
+              <label class="balance-info__label">Wallet Address</label>
+              <button class="balance-info__btn">
+                <svg class="balance-info__dots">
+                  <use xlink:href="img/sprite.svg#dots"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="balance-info__address">
+              <span class="balance-info__address-text">0×24asda5s7da5s7fasf24aa1</span>
+              <button class="balance-info__address-copy">
+                <svg class="balance-info__address-copy-icon">
+                  <use xlink:href="img/sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__analytics dashboard-analytics">
+          <div class="dashboard-analytics__main">
+            <div class="dashboard-analytics__chart chart-section">
+              <div class="chart-section__header">
+                <div class="chart-section__total">
+                  <h2 class="chart-section__title">
+                    <svg class="chart-section__title-icon">
+                      <use xlink:href="img/sprite.svg#chart"></use>
+                    </svg>
+                    Total revenue
+                  </h2>
+                  <div class="chart-section__amount amount">
+                    <div class="amount__text">$240.8K</div>
+                    <div class="amount__change amount__change--up">
+                      <span class="amount__change-amount">28.4%</span>
+                      <svg class="amount__change-icon">
+                        <use xlink:href="img/sprite.svg#arrow-change"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-section__legend">
+                  <span class="chart-section__legend-item chart-section__legend-item--revenue">Revenue</span>
+                  <span class="chart-section__legend-item chart-section__legend-item--expenses">Expenses</span>
+                  <button class="chart-section__calendar calendar">
+                    <img class="calendar__icon" src="./img/svg/date.svg" alt="">
+
+                    <span class="calendar__date">Jan 2024 — Dec 2024</span>
+                    <svg class="calendar__arrow">
+                      <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="chart-section__graph">
+                <div class="chart-section__point amount-point">
+                  <div class="amount-point__top">
+                    <div class="amount-point__text">$240.8K</div>
+                    <div class="amount-point__change amount-point__change--up">
+                      <span class="amount-point__change-amount">12.5%</span>
+                      <svg class="amount-point__change-icon">
+                        <use xlink:href="img/sprite.svg#arrow-change"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="amount-point__date">Oct 29, 2024</span>
+                </div>
+                <img src="./img/graph.png" alt="">
+              </div>
+            </div>
+            <div class="dashboard-analytics__wallet wallet-actions">
+              <div class="wallet-actions__buttons">
+                <button class="wallet-actions__button button">Send</button>
+                <button class="wallet-actions__button button button--blue">Recieve</button>
+                <button class="wallet-actions__button button button--blue">Swap</button>
+              </div>
+              <div class="wallet-actions__assets assets">
+                <h2 class="assets__title">My actives</h2>
+                <ul class="assets__items">
+                  <li class="assets__item">
+                    <div class="assets__item-crypto">
+                      <div class="assets__item-crypto-logo">
+                        <img src="./img/cryptocurrency/bitcoin.svg" alt="" class="assets__item-crypto-img">
+                      </div>
+                      <div class="assets__item-crypto-info">
+                        <span class="assets__item-crypto-name">Bitcoin</span>
+                        <span class="assets__item-crypto-amount">$71,245.03</span>
+                      </div>
+                    </div>
+                    <div class="assets__item-amount amount-assets">
+                      <div class="amount-assets__text">1.12543
+                        <span class="amount-assets__currency">BRT</span>
+                      </div>
+                      <div class="amount-assets__change amount-assets__change--down">
+                        <span class="amount-assets__change-amount">12.6%</span>
+                        <svg class="amount-assets__change-icon">
+                          <use xlink:href="img/sprite.svg#arrow-change"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="assets__item">
+                    <div class="assets__item-crypto">
+                      <div class="assets__item-crypto-logo">
+                        <img src="./img/cryptocurrency/tether.svg" alt="" class="assets__item-crypto-img">
+                      </div>
+                      <div class="assets__item-crypto-info">
+                        <span class="assets__item-crypto-name">Tether</span>
+                        <span class="assets__item-crypto-amount">$1.00</span>
+                      </div>
+                    </div>
+                    <div class="assets__item-amount amount-assets">
+                      <div class="amount-assets__text">3000
+                        <span class="amount-assets__currency">TRON</span>
+                      </div>
+                      <div class="amount-assets__change amount-assets__change--up">
+                        <span class="amount-assets__change-amount">12.5%</span>
+                        <svg class="amount-assets__change-icon">
+                          <use xlink:href="img/sprite.svg#arrow-change"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="assets__item">
+                    <div class="assets__item-crypto">
+                      <div class="assets__item-crypto-logo">
+                        <img src="./img/cryptocurrency/tron.svg" alt="" class="assets__item-crypto-img">
+                      </div>
+                      <div class="assets__item-crypto-info">
+                        <span class="assets__item-crypto-name">Tron</span>
+                        <span class="assets__item-crypto-amount">$3,245.03</span>
+                      </div>
+                    </div>
+                    <div class="assets__item-amount amount-assets">
+                      <div class="amount-assets__text">865
+                        <span class="amount-assets__currency">TRX</span>
+                      </div>
+                      <div class="amount-assets__change amount-assets__change--down">
+                        <span class="amount-assets__change-amount">12.6%</span>
+                        <svg class="amount-assets__change-icon">
+                          <use xlink:href="img/sprite.svg#arrow-change"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="assets__item">
+                    <div class="assets__item-crypto">
+                      <div class="assets__item-crypto-logo">
+                        <img src="./img/cryptocurrency/tether.svg" alt="" class="assets__item-crypto-img">
+                      </div>
+                      <div class="assets__item-crypto-info">
+                        <span class="assets__item-crypto-name">Tether</span>
+                        <span class="assets__item-crypto-amount">$1.00</span>
+                      </div>
+                    </div>
+                    <div class="assets__item-amount amount-assets">
+                      <div class="amount-assets__text">3000
+                        <span class="amount-assets__currency">TRON</span>
+                      </div>
+                      <div class="amount-assets__change amount-assets__change--up">
+                        <span class="amount-assets__change-amount">12.5%</span>
+                        <svg class="amount-assets__change-icon">
+                          <use xlink:href="img/sprite.svg#arrow-change"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="assets__item">
+                    <div class="assets__item-crypto">
+                      <div class="assets__item-crypto-logo">
+                        <img src="./img/cryptocurrency/bnb.svg" alt="" class="assets__item-crypto-img">
+                      </div>
+                      <div class="assets__item-crypto-info">
+                        <span class="assets__item-crypto-name">BNB</span>
+                        <span class="assets__item-crypto-amount">$545.03</span>
+                      </div>
+                    </div>
+                    <div class="assets__item-amount amount-assets">
+                      <div class="amount-assets__text">500
+                        <span class="amount-assets__currency">BNB</span>
+                      </div>
+                      <div class="amount-assets__change amount-assets__change--down">
+                        <span class="amount-assets__change-amount">12.6%</span>
+                        <svg class="amount-assets__change-icon">
+                          <use xlink:href="img/sprite.svg#arrow-change"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="assets__item">
+                    <div class="assets__item-crypto">
+                      <div class="assets__item-crypto-logo">
+                        <img src="./img/cryptocurrency/brunotoken.svg" alt="" class="assets__item-crypto-img">
+                      </div>
+                      <div class="assets__item-crypto-info">
+                        <span class="assets__item-crypto-name">Brunotoken</span>
+                        <span class="assets__item-crypto-amount">$545.03</span>
+                      </div>
+                    </div>
+                    <div class="assets__item-amount amount-assets">
+                      <div class="amount-assets__text">5000
+                        <span class="amount-assets__currency">BRT</span>
+                      </div>
+                      <div class="amount-assets__change amount-assets__change--up">
+                        <span class="amount-assets__change-amount">12.6%</span>
+                        <svg class="amount-assets__change-icon">
+                          <use xlink:href="img/sprite.svg#arrow-change"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-analytics__transactions transactions">
+            <div class="transactions__header">
+              <h2 class="transactions__title">Transactions History</h2>
+              <button class="transactions__calendar calendar">
+                <img class="calendar__icon" src="./img/svg/date.svg" alt="">
+                <span class="calendar__date">Jan 2024</span>
+                <svg class="calendar__arrow">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="transactions__table transactions-table">
+              <div class="transactions-table__content table__content">
+                <div class="table__row">
+                  <ul class="transactions-table__items table__items table__items--title">
+                    <li class="table__item table__item--order">Order</li>
+                    <li class="table__item table__item--date">Date</li>
+                    <li class="table__item table__item--status">Status</li>
+                    <li class="table__item">Total</li>
+                  </ul>
+                </div>
+                <div class="transactions-table__body table__body">
+                  <div class="table__row">
+                    <ul class="transactions-table__items table__items table__items--paid">
+                      <li class="table__item">
+                        <div class="table__item-order table__item-order--paid">#1532</div>
+                      </li>
+                      <li class="table__item">Dec 30, 10:06 AM</li>
+                      <li class="table__item">
+                        <a href="#" class="table__item-status table__item-status--paid">Paid</a>
+                      </li>
+                      <li class="table__item">$ 329.40</li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="transactions-table__items table__items ">
+                      <li class="table__item">
+                        <div class="table__item-order">#1532</div>
+                      </li>
+                      <li class="table__item">Dec 30, 10:06 AM</li>
+                      <li class="table__item">
+                        <a href="#" class="table__item-status table__item-status--pending">Pending</a>
+                      </li>
+                      <li class="table__item">$ 329.40</li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="transactions-table__items table__items table__items--paid">
+                      <li class="table__item">
+                        <div class="table__item-order table__item-order--paid">#1532</div>
+                      </li>
+                      <li class="table__item">Dec 30, 10:06 AM</li>
+                      <li class="table__item">
+                        <a href="#" class="table__item-status table__item-status--paid">Paid</a>
+                      </li>
+                      <li class="table__item">$ 329.40</li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="transactions-table__items table__items ">
+                      <li class="table__item">
+                        <div class="table__item-order">#1532</div>
+                      </li>
+                      <li class="table__item">Dec 30, 10:06 AM</li>
+                      <li class="table__item">
+                        <a href="#" class="table__item-status table__item-status--pending">Pending</a>
+                      </li>
+                      <li class="table__item">$ 329.40</li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="transactions-table__items table__items table__items--paid">
+                      <li class="table__item">
+                        <div class="table__item-order table__item-order--paid">#1532
+                        </div>
+                      </li>
+                      <li class="table__item">Dec 30, 10:06 AM</li>
+                      <li class="table__item">
+                        <a href="#" class="table__item-status table__item-status--paid">Paid</a>
+                      </li>
+                      <li class="table__item">$ 329.40</li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="transactions-table__items table__items ">
+                      <li class="table__item">
+                        <div class="table__item-order">#1532</div>
+                      </li>
+                      <li class="table__item">Dec 30, 10:06 AM</li>
+                      <li class="table__item">
+                        <a href="#" class="table__item-status table__item-status--pending">Pending</a>
+                      </li>
+                      <li class="table__item">$ 329.40</li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="transactions-table__items table__items table__items--paid">
+                      <li class="table__item">
+                        <div class="table__item-order table__item-order--paid">
+                          #1532</div>
+                      </li>
+                      <li class="table__item">Dec 30, 10:06 AM
+                      </li>
+                      <li class="table__item">
+                        <a href="#" class="table__item-status table__item-status--paid">Paid</a>
+                      </li>
+                      <li class="table__item">$ 329.40</li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="transactions-table__items table__items ">
+                      <li class="table__item">
+                        <div class="table__item-order">#1532</div>
+                      </li>
+                      <li class="table__item">Dec 30, 10:06 AM
+                      </li>
+                      <li class="table__item">
+                        <a href="#" class="table__item-status table__item-status--pending">Pending</a>
+                      </li>
+                      <li class="table__item">$ 329.40</li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="transactions-table__items table__items table__items--paid">
+                      <li class="table__item">
+                        <div class="table__item-order table__item-order--paid">#1532</div>
+                      </li>
+                      <li class="table__item">Dec 30, 10:06 AM</li>
+                      <li class="table__item">
+                        <a href="#" class="table__item-status table__item-status--paid">Paid</a>
+                      </li>
+                      <li class="table__item">$ 329.40</li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="transactions-table__items table__items ">
+                      <li class="table__item">
+                        <div class="table__item-order">#1532</div>
+                      </li>
+                      <li class="table__item">Dec 30, 10:06 AM</li>
+                      <li class="table__item">
+                        <a href="#" class="table__item-status table__item-status--pending">Pending</a>
+                      </li>
+                      <li class="table__item">$ 329.40</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <button class="transactions__all">
+              All Transactions
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
