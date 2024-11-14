@@ -14,75 +14,84 @@
 <body>
   <div class="wrapper">
 
-    <aside class="sidebar">
-
-  <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
-
-  <nav class="sidebar__nav nav">
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a href="#" class="nav__link ">
-          <svg class="nav__link-icon">
-            <use xlink:href="img/sprite.svg#dashboard"></use>
-          </svg>
-          <p class="nav__link-text">Dashboard</p>
-          <svg class="nav__link-arrow">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link ">
-          <svg class="nav__link-icon">
-            <use xlink:href="img/sprite.svg#crowdfunding"></use>
-          </svg>
-          <p class="nav__link-text">Crowdfunding</p>
-          <svg class="nav__link-arrow">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link ">
-          <svg class="nav__link-icon">
-            <use xlink:href="img/sprite.svg#avalanche"></use>
-          </svg>
-          <p class="nav__link-text">Avalanche Club</p>
-          <svg class="nav__link-arrow">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link active">
-          <svg class="nav__link-icon">
-            <use xlink:href="img/sprite.svg#exchange"></use>
-          </svg>
-          <p class="nav__link-text">Exchange</p>
-          <svg class="nav__link-arrow">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <ul class="nav__list nav__list--settings">
-      <li class="nav__item nav__item--account">
-        <a href="#" class="nav__link ">
-          <svg class="nav__link-icon">
-            <use xlink:href="img/sprite.svg#settings"></use>
-          </svg>
-          <p class="nav__link-text">Settings</p>
-          <svg class="nav__link-arrow">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
-
-        </a>
-      </li>
-    </ul>
-
-  </nav>
-  <div class="sidebar__socials">
-            <ul class="socials">
+    <sidebar class="side js-side">
+  <aside class="sidebar">
+    <div class="sidebar__header">
+      <div class="sidebar__logo-container">
+        <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
+      </div>
+      <button class="sidebar__header-btn js-side-toggle">
+        <svg class="sidebar__header-btn-icon sidebar__header-btn-icon--left">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+        <svg class="sidebar__header-btn-icon">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="sidebar__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#dashboard"></use>
+            </svg>
+            <p class="nav__link-text">Dashboard</p>
+            <svg class="nav__link-arrow">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#crowdfunding"></use>
+            </svg>
+            <p class="nav__link-text">Crowdfunding</p>
+            <svg class="nav__link-arrow">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#avalanche"></use>
+            </svg>
+            <p class="nav__link-text">Avalanche Club</p>
+            <svg class="nav__link-arrow">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link active">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#exchange"></use>
+            </svg>
+            <p class="nav__link-text">Exchange</p>
+            <svg class="nav__link-arrow">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav__list nav__list--settings">
+        <li class="nav__item nav__item--account">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#settings"></use>
+            </svg>
+            <p class="nav__link-text">Settings</p>
+            <svg class="nav__link-arrow">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sidebar__socials">
+              <ul class="socials">
           <li class="socials__item">
             <a href="#" class="socials__link">
               <svg class="socials__icon">
@@ -134,10 +143,11 @@
           </li>
         </ul>
 
-  </div>
-</aside>
+    </div>
+  </aside>
+</sidebar>
 
-    <div class="page">
+    <div class="page js-main">
       <header class="header">
         <a href="#" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
         <div class="header__text-block">

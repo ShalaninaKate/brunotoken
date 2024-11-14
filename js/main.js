@@ -1286,6 +1286,33 @@ if (textarea) {
     this.style.height = this.scrollHeight + 'px'; // Установить новую высоту
   });
 }
+function fitTextToContainer() {
+  const container = document.querySelector('.amount-dividends');
+  const text = document.querySelector('.amount-dividends__text');
+  if (!container || !text) {
+    console.warn("Элемент контейнера или текста не найден!");
+    return;
+  }
+  let fontSize = 32; // Начальный размер шрифта
+  text.style.fontSize = `${fontSize}px`;
+
+  // Уменьшаем шрифт, пока текст не впишется в ширину контейнера
+  while (text.scrollWidth > container.clientWidth && fontSize > 8) {
+    fontSize -= 1;
+    text.style.fontSize = `${fontSize}px`;
+  }
+}
+
+// Запускаем функцию при загрузке и изменении размера окна
+window.addEventListener('resize', fitTextToContainer);
+fitTextToContainer();
+const sideToggle = document.querySelector('.js-side-toggle');
+const side = document.querySelector('.js-side');
+const mainContent = document.querySelector('.js-main');
+sideToggle.addEventListener('click', () => {
+  side.classList.toggle('minify');
+  mainContent.classList.toggle('wide');
+});
 })();
 
 /******/ })()

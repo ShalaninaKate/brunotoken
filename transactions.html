@@ -14,75 +14,84 @@
 <body>
   <div class="wrapper">
 
-    <aside class="sidebar">
-
-  <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
-
-  <nav class="sidebar__nav nav">
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a href="#" class="nav__link active">
-          <svg class="nav__link-icon">
-            <use xlink:href="img/sprite.svg#dashboard"></use>
-          </svg>
-          <p class="nav__link-text">Dashboard</p>
-          <svg class="nav__link-arrow">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link ">
-          <svg class="nav__link-icon">
-            <use xlink:href="img/sprite.svg#crowdfunding"></use>
-          </svg>
-          <p class="nav__link-text">Crowdfunding</p>
-          <svg class="nav__link-arrow">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link ">
-          <svg class="nav__link-icon">
-            <use xlink:href="img/sprite.svg#avalanche"></use>
-          </svg>
-          <p class="nav__link-text">Avalanche Club</p>
-          <svg class="nav__link-arrow">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link ">
-          <svg class="nav__link-icon">
-            <use xlink:href="img/sprite.svg#exchange"></use>
-          </svg>
-          <p class="nav__link-text">Exchange</p>
-          <svg class="nav__link-arrow">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <ul class="nav__list nav__list--settings">
-      <li class="nav__item nav__item--account">
-        <a href="#" class="nav__link ">
-          <svg class="nav__link-icon">
-            <use xlink:href="img/sprite.svg#settings"></use>
-          </svg>
-          <p class="nav__link-text">Settings</p>
-          <svg class="nav__link-arrow">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
-
-        </a>
-      </li>
-    </ul>
-
-  </nav>
-  <div class="sidebar__socials">
-            <ul class="socials">
+    <sidebar class="side js-side">
+  <aside class="sidebar">
+    <div class="sidebar__header">
+      <div class="sidebar__logo-container">
+        <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
+      </div>
+      <button class="sidebar__header-btn js-side-toggle">
+        <svg class="sidebar__header-btn-icon sidebar__header-btn-icon--left">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+        <svg class="sidebar__header-btn-icon">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="sidebar__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link active">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#dashboard"></use>
+            </svg>
+            <p class="nav__link-text">Dashboard</p>
+            <svg class="nav__link-arrow">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#crowdfunding"></use>
+            </svg>
+            <p class="nav__link-text">Crowdfunding</p>
+            <svg class="nav__link-arrow">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#avalanche"></use>
+            </svg>
+            <p class="nav__link-text">Avalanche Club</p>
+            <svg class="nav__link-arrow">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#exchange"></use>
+            </svg>
+            <p class="nav__link-text">Exchange</p>
+            <svg class="nav__link-arrow">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav__list nav__list--settings">
+        <li class="nav__item nav__item--account">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#settings"></use>
+            </svg>
+            <p class="nav__link-text">Settings</p>
+            <svg class="nav__link-arrow">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sidebar__socials">
+              <ul class="socials">
           <li class="socials__item">
             <a href="#" class="socials__link">
               <svg class="socials__icon">
@@ -134,10 +143,11 @@
           </li>
         </ul>
 
-  </div>
-</aside>
+    </div>
+  </aside>
+</sidebar>
 
-    <div class="page">
+    <div class="page js-main">
       <header class="header">
         <a href="#" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
         <div class="header__text-block">
@@ -241,7 +251,7 @@
               <div class="transactions__table transactions-table">
                 <div class="table__row">
                   <ul class="transactions-table__items table__items table__items--title">
-                    <li class="table__item table__item--order">Order</li>
+                    <li class="table__item table__item--order-purpl">Order</li>
                     <li class="table__item table__item--address">Address</li>
                     <li class="table__item table__item--date">Date</li>
                     <li class="table__item table__item--status">Status</li>
@@ -252,15 +262,15 @@
                 <div class="table__row">
                   <ul class="transactions-table__items table__items">
                     <li class="table__item">
-                      <div class="table__item-order table__item-order--paid">#1532</div>
+                      <div class="table__item-order table__item-order--completed">#1532</div>
                     </li>
-                    <li class="table__item">0×56as4da54fas4fasfa32sf</li>
+                    <li class="table__item"><span>0×56as4da54fas4fasfa32sf</span></li>
                     <li class="table__item">Jan 30, 2024</li>
                     <li class="table__item">
                       <a href="#" class="table__item-status table__item-status--completed">Completed</a>
                     </li>
-                    <li class="table__item">$ 1,099.24</li>
-                    <li class="table__item">$ 1,099.24</li>
+                    <li class="table__item"><span>$ 1,099.24</span></li>
+                    <li class="table__item"><span>$ 1,099.24</span></li>
                   </ul>
                 </div>
                 <div class="table__row">
@@ -268,13 +278,13 @@
                     <li class="table__item">
                       <div class="table__item-order">#1532</div>
                     </li>
-                    <li class="table__item">0×56as4da54fas4fasfa32sf</li>
+                    <li class="table__item"><span>0×56as4da54fas4fasfa32sf</span></li>
                     <li class="table__item">Jan 30, 2024</li>
                     <li class="table__item">
                       <a href="#" class="table__item-status table__item-status--pending">Pending</a>
                     </li>
-                    <li class="table__item">$ 1,099.24</li>
-                    <li class="table__item">$ 1,099.24</li>
+                    <li class="table__item"><span>$ 1,099.24</span></li>
+                    <li class="table__item"><span>$ 1,099.24</span></li>
                   </ul>
                 </div>
                 <div class="table__row">
@@ -282,27 +292,27 @@
                     <li class="table__item">
                       <div class="table__item-order">#1532</div>
                     </li>
-                    <li class="table__item">0×56as4da54fas4fasfa32sf</li>
+                    <li class="table__item"><span>0×56as4da54fas4fasfa32sf</span></li>
                     <li class="table__item">Jan 30, 2024</li>
                     <li class="table__item">
                       <a href="#" class="table__item-status table__item-status--canceled">Canceled</a>
                     </li>
-                    <li class="table__item">$ 1,099.24</li>
-                    <li class="table__item">$ 1,099.24</li>
+                    <li class="table__item"><span>$ 1,099.24</span></li>
+                    <li class="table__item"><span>$ 1,099.24</span></li>
                   </ul>
                 </div>
                 <div class="table__row">
                   <ul class="transactions-table__items table__items">
                     <li class="table__item">
-                      <div class="table__item-order table__item-order--paid">#1532</div>
+                      <div class="table__item-order table__item-order--completed">#1532</div>
                     </li>
-                    <li class="table__item">0×56as4da54fas4fasfa32sf</li>
+                    <li class="table__item"><span>0×56as4da54fas4fasfa32sf</span></li>
                     <li class="table__item">Jan 30, 2024</li>
                     <li class="table__item">
                       <a href="#" class="table__item-status table__item-status--completed">Completed</a>
                     </li>
-                    <li class="table__item">$ 1,099.24</li>
-                    <li class="table__item">$ 1,099.24</li>
+                    <li class="table__item"><span>$ 1,099.24</span></li>
+                    <li class="table__item"><span>$ 1,099.24</span></li>
                   </ul>
                 </div>
                 <div class="table__row">
@@ -310,13 +320,13 @@
                     <li class="table__item">
                       <div class="table__item-order">#1532</div>
                     </li>
-                    <li class="table__item">0×56as4da54fas4fasfa32sf</li>
+                    <li class="table__item"><span>0×56as4da54fas4fasfa32sf</span></li>
                     <li class="table__item">Jan 30, 2024</li>
                     <li class="table__item">
                       <a href="#" class="table__item-status table__item-status--pending">Pending</a>
                     </li>
-                    <li class="table__item">$ 1,099.24</li>
-                    <li class="table__item">$ 1,099.24</li>
+                    <li class="table__item"><span>$ 1,099.24</span></li>
+                    <li class="table__item"><span>$ 1,099.24</span></li>
                   </ul>
                 </div>
                 <div class="table__row">
@@ -324,13 +334,13 @@
                     <li class="table__item">
                       <div class="table__item-order">#1532</div>
                     </li>
-                    <li class="table__item">0×56as4da54fas4fasfa32sf</li>
+                    <li class="table__item"><span>0×56as4da54fas4fasfa32sf</span></li>
                     <li class="table__item">Jan 30, 2024</li>
                     <li class="table__item">
                       <a href="#" class="table__item-status table__item-status--canceled">Canceled</a>
                     </li>
-                    <li class="table__item">$ 1,099.24</li>
-                    <li class="table__item">$ 1,099.24</li>
+                    <li class="table__item"><span>$ 1,099.24</span></li>
+                    <li class="table__item"><span>$ 1,099.24</span></li>
                   </ul>
                 </div>
               </div>
