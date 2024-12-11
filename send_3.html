@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Swap 3</title>
+  <title>Send 3</title>
   <link rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
 </head>
@@ -191,11 +191,26 @@
       <main class="main ">
         <div class="exchange">
           <div class="exchange__order hidden">
-            <h2 class="exchange__order-title">Swap Order</h2>
+            <h2 class="exchange__order-title">Exchange Order</h2>
             <form action="" class="exchange__order-form form">
               <div class="order-form__body">
                 <div class="order-form__block">
-                  <h3 class="order-form__title">You pay</h3>
+                  <h3 class="order-form__title">General Information</h3>
+                  <div class="order-form__items">
+                    <div class="order-form__item form__item">
+                      <div class="order-form__input form__input input">
+                        <input type="text" name="" value="" placeholder="Country" class="input__control">
+                      </div>
+                    </div>
+                    <div class="order-form__item form__item">
+                      <div class="order-form__input form__input input">
+                        <input type="text" name="" value="" placeholder="Traders & Companies" class="input__control">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-form__block">
+                  <h3 class="order-form__title">Token Information</h3>
                   <div class="order-form__items">
                     <div class="order-form__item form__item">
                       <button type="button" class="form__control form-control ">
@@ -219,39 +234,10 @@
                       </div>
                       <span class="form__item-text-bottom">Balance: 1 000 000 BRT</span>
                     </div>
-
-                  </div>
-                </div>
-                <div class="order-form__block">
-                  <h3 class="order-form__title">You get</h3>
-                  <div class="order-form__items">
-                    <div class="order-form__item form__item">
-                      <button type="button" class="form__control form-control ">
-                        <p class="form-control__text">Asset</p>
-                        <svg class="form-control__arrow">
-                          <use xlink:href="img/sprite.svg#arrow"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="order-form__item form__item">
-                      <button type="button" class="form__control form-control ">
-                        <p class="form-control__text">Network</p>
-                        <svg class="form-control__arrow">
-                          <use xlink:href="img/sprite.svg#arrow"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="order-form__item form__item">
-                      <div class="order-form__input form__input input">
-                        <input type="text" name="" value="60 000" placeholder="" class="input__control">
-                      </div>
-                      <span class="form__item-text-bottom">Fee: 0.003 BTR</span>
-                    </div>
-
                   </div>
                 </div>
               </div>
-              <button type="button" class="order-form__button button">Swap</button>
+              <button type="button" class="order-form__button button">Create Order</button>
             </form>
           </div>
           <div class="exchange__order exchange__order--done">

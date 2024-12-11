@@ -1309,10 +1309,48 @@ fitTextToContainer();
 const sideToggle = document.querySelector('.js-side-toggle');
 const side = document.querySelector('.js-side');
 const mainContent = document.querySelector('.js-main');
-sideToggle.addEventListener('click', () => {
-  side.classList.toggle('minify');
-  mainContent.classList.toggle('wide');
-});
+if (sideToggle) {
+  sideToggle.addEventListener('click', () => {
+    side.classList.toggle('minify');
+    mainContent.classList.toggle('wide');
+  });
+}
+const dropdownButtons = document.querySelectorAll('.form-control');
+const arrowIcons = document.querySelectorAll('.form-control__arrow-btn');
+if (arrowIcons) {
+  arrowIcons.forEach(arrowIcon => {
+    arrowIcon.addEventListener('click', e => {
+      e.stopPropagation();
+      const dropdownMenu = arrowIcon.closest('.form-control').nextElementSibling;
+      if (dropdownMenu && dropdownMenu.classList.contains('dropdown-menu')) {
+        dropdownMenu.classList.toggle('open');
+      }
+    });
+  });
+}
+const inputs = document.querySelectorAll('.authentication__input');
+if (inputs) {
+  inputs.forEach((input, index) => {
+    input.addEventListener('keydown', e => {
+      if (e.key >= 0 && e.key <= 9) {
+        inputs[index].value = ''; // Очистить поле перед вводом новой цифры
+        if (index < inputs.length - 1) {
+          setTimeout(() => inputs[index + 1].focus(), 10); // Переместить фокус на следующий инпут
+        }
+      } else if (e.key === 'Backspace') {
+        if (index > 0) {
+          setTimeout(() => inputs[index - 1].focus(), 10); // Переместить фокус на предыдущий инпут
+        }
+      } else {
+        e.preventDefault(); // Предотвратить ввод нецифровых символов
+      }
+    });
+    input.addEventListener('input', e => {
+      const value = e.target.value.replace(/[^0-9]/g, '');
+      e.target.value = value; // Убедиться, что введена только цифра
+    });
+  });
+}
 })();
 
 /******/ })()

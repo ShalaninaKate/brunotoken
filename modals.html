@@ -11,7 +11,9 @@
   <script defer src="js/main.js"></script>
 </head>
 
+
 <body>
+
 
   <div class="container-modal">
     <div class="buttons">
@@ -20,13 +22,17 @@
       <button class="button" data-path="refund" data-animation="fadeInUp">Refund</button>
       <button class="button" data-path="terms" data-animation="fadeInUp">Terms & Conditions</button>
       <button class="button" data-path="code" data-animation="fadeInUp">Code for your referrals</button>
+      <button class="button" data-path="email" data-animation="fadeInUp">Change E-mail</button>
+      <button class="button" data-path="delete-card" data-animation="fadeInUp">Delete Card</button>
+      <button class="button" data-path="add-card" data-animation="fadeInUp">Add Card</button>
     </div>
 
     <div class="modal">
 
+
       <!-- Buy Personal -->
       <div class="modal__container" role="dialog" aria-modal="true" data-target="personal">
-        <button class=" modal__close js-modal-close" aria-label="close modal">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
           <svg class="modal__close-icon">
             <use xlink:href="img/sprite.svg#close"></use>
           </svg>
@@ -45,7 +51,7 @@
               <span class="form__item-text-bottom">Balance: 1 000 000 BRT</span>
             </div>
             <div class="order__item form__item">
-              <button class="form__control form-control ">
+              <button type="button" class="form__control form-control ">
                 <p class="form-control__text">Daily</p>
                 <svg class="form-control__arrow">
                   <use xlink:href="img/sprite.svg#arrow"></use>
@@ -77,20 +83,20 @@
             </ul>
 
           </div>
-          <button class="order__button button">Buy Basic</button>
+          <button type="button" class="order__button button">Buy Basic</button>
         </form>
       </div>
 
       <!-- Refund -->
-      <div class="modal__container" role="dialog" aria-modal="true" data-target="refund">
-        <button class=" modal__close js-modal-close" aria-label="close modal">
+      <div class="modal__container modal__container--refund" role="dialog" aria-modal="true" data-target="refund">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
           <svg class="modal__close-icon">
             <use xlink:href="img/sprite.svg#close"></use>
           </svg>
         </button>
         <div class="modal__header">
           <h2 class="modal__title">Deposit List</h2>
-          <p class="modal__subtitle">Select one or more deposits to refund</p>
+          <p class="modal__subtitle">Select one or more deposits to refund</p>
         </div>
         <div class="refund__table transactions-table">
           <div class="transactions-table__content table__content">
@@ -123,16 +129,15 @@
                 <li class="table__item">329 BRT</li>
               </ul>
             </div>
-
           </div>
-
         </div>
-        <button class="refund__button button">Refund</button>
+        <button type="button" class="refund__button button">Refund</button>
       </div>
+
 
       <!-- Terms & Conditions -->
       <div class="modal__container" role="dialog" aria-modal="true" data-target="terms">
-        <button class=" modal__close js-modal-close" aria-label="close modal">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
           <svg class="modal__close-icon">
             <use xlink:href="img/sprite.svg#close"></use>
           </svg>
@@ -143,24 +148,25 @@
         <div class="terms">
           <div class="terms__text">
             <p>
-              Parturient dui iaculis sed proin nunc faucibus amet. Nisl vitae in dui eget pretium ut etiam. Faucibus
+              Parturient dui iaculis sed proin nunc faucibus amet. Nisl vitae in dui eget pretium ut etiam. Faucibus
               semper diam quis volutpat est augue. Faucibus suspendisse ultrices egestas lacus sodales lobortis quam.
             </p>
             <p>
-              Tellus sagittis mollis libero felis suspendisse risus. Malesuada leo est suspendisse ultricies in quam
+              Tellus sagittis mollis libero felis suspendisse risus. Malesuada leo est suspendisse ultricies in quam
               lacus. Elit sit
-              massa elementum hendrerit feugiat sit etiam vel turpis. Nulla et est suspendisse maecenas faucibus luctus
+              massa elementum hendrerit feugiat sit etiam vel turpis. Nulla et est suspendisse maecenas faucibus luctus
               vel.
             </p>
           </div>
-          <button class="terms__button button">Agree</button>
+          <button type="button" class="terms__button button">Agree</button>
 
         </div>
       </div>
 
+
       <!-- Code for your referrals -->
       <div class="modal__container" role="dialog" aria-modal="true" data-target="code">
-        <button class=" modal__close js-modal-close" aria-label="close modal">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
           <svg class="modal__close-icon">
             <use xlink:href="img/sprite.svg#close"></use>
           </svg>
@@ -174,7 +180,7 @@
           </div>
           <div class="code__address">
             <span class="code__address-text">a5d7fga56v6ad4fg2sadf4gadfg</span>
-            <button class="code__address-copy">
+            <button type="button" class="code__address-copy">
               <svg class="code__address-copy-icon">
                 <use xlink:href="img/sprite.svg#copy"></use>
               </svg>
@@ -182,9 +188,108 @@
           </div>
         </div>
       </div>
+
+
+
+      <!-- Change E-mail -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="email">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__header">
+          <h2 class="modal__title">Change E-mail</h2>
+        </div>
+        <div class="settings-action">
+          <div class="settings-action__text">
+            <p>
+              You have changed your account email address. A confirmation email has been sent to the new email address.
+              Follow the instructions in the email to completely change your email address.
+            </p>
+          </div>
+          <button type="button" class="settings-action__button button">Got i!</button>
+        </div>
+      </div>
+
+
+      <!-- Delete Card -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="delete-card">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__header">
+          <h2 class="modal__title">Delete Card</h2>
+        </div>
+        <div class="settings-action">
+          <div class="settings-action__text">
+            <p>
+              By clicking 'Confirm' you agree to the permanent deletion of your card, as well as all data associated
+              with it,
+              including transactions
+            </p>
+          </div>
+          <div class="settings-action__buttons">
+            <button type="button" class="terms__button button button--red">Cancel</button>
+            <button type="button" class="terms__button button">Confirm</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Add Card-->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="add-card">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__header">
+          <h2 class="modal__title">Add Card</h2>
+        </div>
+        <form action="" class="add-card form">
+          <div class="add-card__items form__items">
+            <div class="form__item">
+              <label class="form__label">Cardholder name</label>
+              <div class="form__input input">
+                <input type="text" name="text" value="John Johnson" class="input__control">
+              </div>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Card number</label>
+              <div class="form__input input">
+                <input type="text" name="text" value="5544 3569 6974 1235" class="input__control">
+                <img class="input__icon" src="./img/card/mastercard.svg" alt="">
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__item">
+                <label class="form__label">Expiration date</label>
+                <div class="form__input input">
+                  <input type="text" name="text" value="07/28" class="input__control">
+                </div>
+              </div>
+              <div class="form__item">
+                <label class="form__label">CVV </label>
+                <div class="form__input input">
+                  <input type="text" name="text" value="722" class="input__control">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="order-form__button button">Add Card</button>
+        </form>
+      </div>
     </div>
   </div>
   </div>
+  </div>
+
+
+
+
 
 </body>
 <style>

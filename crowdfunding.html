@@ -11,6 +11,7 @@
   <script defer src="js/main.js"></script>
 </head>
 
+
 <body>
   <div class="wrapper">
 
@@ -20,7 +21,7 @@
       <div class="sidebar__logo-container">
         <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
       </div>
-      <button class="sidebar__header-btn js-side-toggle">
+      <button type="button" class="sidebar__header-btn js-side-toggle">
         <svg class="sidebar__header-btn-icon sidebar__header-btn-icon--left">
           <use xlink:href="img/sprite.svg#arrow"></use>
         </svg>
@@ -152,18 +153,18 @@
         <a href="#" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
         <div class="header__text-block">
           <h1 class="header__title">Crowdfunding</h1>
-          <p class="header__text">This service is provided only in the BRT cryptocurrency. To participate in
-            crowdfunding, the User must either already have BRT, or purchase it on the Exchange page, or exchange (SWAP)
-            one of the other cryptocurrencies for BRT.</p>
+          <p class="header__text">This service is provided only in the BRT cryptocurrency. To participate in
+            crowdfunding, the User must either already have BRT, or purchase it on the Exchange page, or exchange (SWAP)
+            one of the other cryptocurrencies for BRT.</p>
         </div>
 
         <div class="header__actions">
-          <button class="header__notification notification">
+          <button type="button" class="header__notification notification">
             <svg class="notification__icon">
               <use xlink:href="img/sprite.svg#notification"></use>
             </svg>
           </button>
-          <button class="header__currency-selector currency-selector">
+          <button type="button" class="header__currency-selector currency-selector">
             <span class="currency-selector__text">
               BRT
             </span>
@@ -171,7 +172,7 @@
               <use xlink:href="img/sprite.svg#arrow"></use>
             </svg>
           </button>
-          <button class="header__profile profile">
+          <button type="button" class="header__profile profile">
             <div class="profile__user">
               <div class="profile__ava">
                 <img class="profile__img" src="./img/person.png" alt="ava">
@@ -193,29 +194,29 @@
             <div class="tariff__body">
               <div class="tariff__header">
                 <h2 class="tariff__title">Personal</h2>
-                <p class="tariff__descr">0.8% per month, <br> earn up to 9,6% a year</p>
-                <button class="tariff__refund">Refund of all Amount</button>
+                <p class="tariff__descr">0.8% per month, <br> earn up to 9.6% a year</p>
+                <button type="button" class="tariff__refund">Refund of all Amount</button>
               </div>
               <ul class="tariff__descr-items">
                 <li class="tariff__descr-item">
                   <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon">
-                  <p class="tariff__descr-text">Пользователь вносит (Депозит) некую сумму в BRT.
+                  <p class="tariff__descr-text">Пользователь вносит (Депозит) некую сумму в BRT.
                   </p>
                 </li>
                 <li class="tariff__descr-item">
                   <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon tariff__descr-icon--down">
-                  <p class="tariff__descr-text">Пользователь имеет право вернуть всю сумму на свой баланс в любое
+                  <p class="tariff__descr-text">Пользователь имеет право вернуть всю сумму на свой баланс в любое
                     время.
                   </p>
                 </li>
                 <li class="tariff__descr-item">
                   <img src="./img/svg/commission.svg" alt="icon" class="tariff__descr-icon">
-                  <p class="tariff__descr-text">Комиссия: При возврате суммы взимается комиссия (Gas fee) в размере
+                  <p class="tariff__descr-text">Комиссия: При возврате суммы взимается комиссия (Gas fee) в размере
                     0,02 BRT.
                   </p>
                 </li>
               </ul>
-              <button class="tariff__button button">Buy Personal</button>
+              <button type="button" class="tariff__button button">Buy Personal</button>
             </div>
           </li>
           <li class="tariff__card tariff__card--basic">
@@ -223,28 +224,28 @@
               <div class="tariff__header">
                 <h2 class="tariff__title">Basic</h2>
                 <p class="tariff__descr">1.2% per month, <br>
-                  earn up to 14,4% a year</p>
+                  earn up to 14.4% a year</p>
               </div>
               <ul class="tariff__descr-items">
                 <li class="tariff__descr-item">
                   <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon">
-                  <p class="tariff__descr-text">Депозит вносится на срок 3 месяца
+                  <p class="tariff__descr-text">Депозит вносится на срок 3 месяца
                     (91 день)
                   </p>
                 </li>
                 <li class="tariff__descr-item">
                   <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon tariff__descr-icon--down">
-                  <p class="tariff__descr-text">Депозит не может быть возвращен на баланс Пользователя раньше срока.
+                  <p class="tariff__descr-text">Депозит не может быть возвращен на баланс Пользователя раньше срока.
                   </p>
                 </li>
                 <li class="tariff__descr-item">
                   <img src="./img/svg/commission.svg" alt="icon" class="tariff__descr-icon">
-                  <p class="tariff__descr-text">Процесс возврата: По прошествии 91 дня вся сумма Депозита возвращается
-                    на баланс Пользователя автоматически.
+                  <p class="tariff__descr-text">Процесс возврата: По прошествии 91 дня вся сумма Депозита возвращается
+                    на баланс Пользователя автоматически.
                   </p>
                 </li>
               </ul>
-              <button class="tariff__button button">Buy Basic</button>
+              <button type="button" class="tariff__button button">Buy Basic</button>
             </div>
 
           </li>
@@ -253,29 +254,29 @@
               <div class="tariff__header">
                 <h2 class="tariff__title">Premium</h2>
                 <p class="tariff__descr">1.4% per month, <br>
-                  earn up to 16,8% a year</p>
+                  earn up to 16.8% a year</p>
               </div>
               <ul class="tariff__descr-items">
                 <li class="tariff__descr-item">
                   <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon">
-                  <p class="tariff__descr-text">Депозит вносится на срок 6 месяцев
+                  <p class="tariff__descr-text">Депозит вносится на срок 6 месяцев
                     (183 дня)
                   </p>
                 </li>
                 <li class="tariff__descr-item">
                   <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon tariff__descr-icon--down">
-                  <p class="tariff__descr-text">Депозит не может быть возвращен на баланс Пользователя раньше
+                  <p class="tariff__descr-text">Депозит не может быть возвращен на баланс Пользователя раньше
                     срока.
                   </p>
                 </li>
                 <li class="tariff__descr-item">
                   <img src="./img/svg/commission.svg" alt="icon" class="tariff__descr-icon">
-                  <p class="tariff__descr-text">Процесс возврата: По прошествии 183 дней вся сумма Депозита
-                    возвращается на баланс Пользователя автоматически.
+                  <p class="tariff__descr-text">Процесс возврата: По прошествии 183 дней вся сумма Депозита
+                    возвращается на баланс Пользователя автоматически.
                   </p>
                 </li>
               </ul>
-              <button class="tariff__button button">Buy Premium </button>
+              <button type="button" class="tariff__button button">Buy Premium </button>
             </div>
 
           </li>
@@ -284,29 +285,29 @@
               <div class="tariff__header">
                 <h2 class="tariff__title">VIP</h2>
                 <p class="tariff__descr">1.6% per month, <br>
-                  earn up to 19,2% a year</p>
+                  earn up to 19.2% a year</p>
               </div>
               <ul class="tariff__descr-items">
                 <li class="tariff__descr-item">
                   <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon">
-                  <p class="tariff__descr-text">Депозит вносится на срок 6 месяцев
+                  <p class="tariff__descr-text">Депозит вносится на срок 6 месяцев
                     (183 дня)
                   </p>
                 </li>
                 <li class="tariff__descr-item">
                   <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon tariff__descr-icon--down">
-                  <p class="tariff__descr-text">Депозит не может быть возвращен на баланс Пользователя раньше
+                  <p class="tariff__descr-text">Депозит не может быть возвращен на баланс Пользователя раньше
                     срока.
                   </p>
                 </li>
                 <li class="tariff__descr-item">
                   <img src="./img/svg/commission.svg" alt="icon" class="tariff__descr-icon">
-                  <p class="tariff__descr-text">Процесс возврата: По прошествии 183 дней вся сумма Депозита
-                    возвращается на баланс Пользователя автоматически.
+                  <p class="tariff__descr-text">Процесс возврата: По прошествии 183 дней вся сумма Депозита
+                    возвращается на баланс Пользователя автоматически.
                   </p>
                 </li>
               </ul>
-              <button class="tariff__button button button--blue">Buy VIP </button>
+              <button type="button" class="tariff__button button button--blue">Buy VIP </button>
             </div>
 
           </li>

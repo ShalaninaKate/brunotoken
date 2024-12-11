@@ -11,6 +11,7 @@
   <script defer src="js/main.js"></script>
 </head>
 
+
 <body>
   <div class="wrapper">
 
@@ -20,7 +21,7 @@
       <div class="sidebar__logo-container">
         <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
       </div>
-      <button class="sidebar__header-btn js-side-toggle">
+      <button type="button" class="sidebar__header-btn js-side-toggle">
         <svg class="sidebar__header-btn-icon sidebar__header-btn-icon--left">
           <use xlink:href="img/sprite.svg#arrow"></use>
         </svg>
@@ -155,12 +156,12 @@
         </div>
 
         <div class="header__actions">
-          <button class="header__notification notification">
+          <button type="button" class="header__notification notification">
             <svg class="notification__icon">
               <use xlink:href="img/sprite.svg#notification"></use>
             </svg>
           </button>
-          <button class="header__currency-selector currency-selector">
+          <button type="button" class="header__currency-selector currency-selector">
             <span class="currency-selector__text">
               BRT
             </span>
@@ -168,7 +169,7 @@
               <use xlink:href="img/sprite.svg#arrow"></use>
             </svg>
           </button>
-          <button class="header__profile profile">
+          <button type="button" class="header__profile profile">
             <div class="profile__user">
               <div class="profile__ava">
                 <img class="profile__img" src="./img/person.png" alt="ava">
@@ -186,25 +187,26 @@
       </header>
       <main class="main">
         <div class="settings">
-          <nav class="settings__navigation navigation-settings">
+                    <nav class="navigation-settings">
             <ul class="navigation-settings__list">
-              <li class="navigation-settings__item">
+
+              <li class="navigation-settings__item ">
                 <a href="#" class="navigation-settings__link ">
                   <svg class="navigation-settings__link-icon">
                     <use xlink:href="img/sprite.svg#edit"></use>
                   </svg>
-                  <p class="navigation-settings__link-text">Personal Information</p>
+                  <p class="navigation-settings__link-text"><span>Personal</span> Information</p>
                 </a>
               </li>
-              <li class="navigation-settings__item">
-                <a href="#" class="navigation-settings__link active">
+              <li class="navigation-settings__item active">
+                <a href="#" class="navigation-settings__link">
                   <svg class="navigation-settings__link-icon">
                     <use xlink:href="img/sprite.svg#password"></use>
                   </svg>
                   <p class="navigation-settings__link-text">Password</p>
                 </a>
               </li>
-              <li class="navigation-settings__item">
+              <li class="navigation-settings__item ">
                 <a href="#" class="navigation-settings__link">
                   <svg class="navigation-settings__link-icon">
                     <use xlink:href="img/sprite.svg#card"></use>
@@ -212,54 +214,70 @@
                   <p class="navigation-settings__link-text">Billing</p>
                 </a>
               </li>
-              <li class="navigation-settings__item">
-                <a href="#" class="navigation-settings__link">
+              <li class="navigation-settings__item ">
+                <a href="#" class="navigation-settings__link ">
                   <svg class="navigation-settings__link-icon">
                     <use xlink:href="img/sprite.svg#notification"></use>
                   </svg>
                   <p class="navigation-settings__link-text">Notifications</p>
                 </a>
               </li>
+              <li class="navigation-settings__item ">
+                <a href="#" class="navigation-settings__link ">
+                  <svg class="navigation-settings__link-icon">
+                    <use xlink:href="img/sprite.svg#verification"></use>
+                  </svg>
+                  <p class="navigation-settings__link-text">Verification</p>
+                </a>
+              </li>
             </ul>
           </nav>
+
           <div class="settings__body">
             <div class="settings__card">
-              <div class="settings__header">
+              <div class="settings__header ">
                 <h2 class="settings__title">Change Password</h2>
                 <div class="settings__subtitle">Lorem ipsum dolor sit amet consectetur adipiscing.</div>
               </div>
               <form action="" class="settings__form form-settings">
                 <div class="form-settings__items">
-                <div class="form-settings__item">
-                  <div class="form-settings__label">
-                    <svg class="form-settings__label-icon">
-                      <use xlink:href="img/sprite.svg#password"></use>
-                    </svg>
-                    <span class="form-settings__label-text">Old Password</span>
+                  <div class="form-settings__item">
+                    <div class="form-settings__label">
+                      <svg class="form-settings__label-icon">
+                        <use xlink:href="img/sprite.svg#password"></use>
+                      </svg>
+                      <span class="form-settings__label-text">Old Password</span>
+                    </div>
+                    <div class="form-settings__input-wrapper">
+                      <input type="password" class="form-settings__input" value="John Carter">
+                    </div>
                   </div>
-                  <input type="password" class="form-settings__input" value="John Carter">
-                </div>
-                <div class="form-settings__item">
-                  <div class="form-settings__label">
-                    <svg class="form-settings__label-icon">
-                      <use xlink:href="img/sprite.svg#password"></use>
-                    </svg>
-                    <span class="form-settings__label-text">New Password</span>
+                  <div class="form-settings__item">
+                    <div class="form-settings__label">
+                      <svg class="form-settings__label-icon">
+                        <use xlink:href="img/sprite.svg#password"></use>
+                      </svg>
+                      <span class="form-settings__label-text">New Password</span>
+                    </div>
+                    <div class="form-settings__input-wrapper">
+                      <input type="password" class="form-settings__input" value="john@dashdark.com">
+                    </div>
                   </div>
-                  <input type="password" class="form-settings__input" value="john@dashdark.com">
-                </div>
-                <div class="form-settings__item">
-                  <div class="form-settings__label">
-                    <svg class="form-settings__label-icon">
-                      <use xlink:href="img/sprite.svg#password"></use>
-                    </svg>
-                    <span class="form-settings__label-text">Repeat New Password</span>
+                  <div class="form-settings__item">
+                    <div class="form-settings__label">
+                      <svg class="form-settings__label-icon">
+                        <use xlink:href="img/sprite.svg#password"></use>
+                      </svg>
+                      <span class="form-settings__label-text">Repeat New Password</span>
+                    </div>
+                    <div class="form-settings__input-wrapper">
+                      <input type="password" class="form-settings__input" value="john@dashdark.com">
+                    </div>
+
                   </div>
-                  <input type="password" class="form-settings__input" value="john@dashdark.com">
-                </div>
                 </div>
 
-                <button class="form-settings__button button">Save</button>
+                <button type="button" class="form-settings__button button">Save</button>
               </form>
             </div>
           </div>

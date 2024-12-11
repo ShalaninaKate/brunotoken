@@ -11,6 +11,7 @@
   <script defer src="js/main.js"></script>
 </head>
 
+
 <body>
   <div class="wrapper">
 
@@ -20,7 +21,7 @@
       <div class="sidebar__logo-container">
         <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
       </div>
-      <button class="sidebar__header-btn js-side-toggle">
+      <button type="button" class="sidebar__header-btn js-side-toggle">
         <svg class="sidebar__header-btn-icon sidebar__header-btn-icon--left">
           <use xlink:href="img/sprite.svg#arrow"></use>
         </svg>
@@ -154,12 +155,12 @@
           <h1 class="header__title">Settings</h1>
         </div>
         <div class="header__actions">
-          <button class="header__notification notification">
+          <button type="button" class="header__notification notification">
             <svg class="notification__icon">
               <use xlink:href="img/sprite.svg#notification"></use>
             </svg>
           </button>
-          <button class="header__currency-selector currency-selector">
+          <button type="button" class="header__currency-selector currency-selector">
             <span class="currency-selector__text">
               BRT
             </span>
@@ -167,7 +168,7 @@
               <use xlink:href="img/sprite.svg#arrow"></use>
             </svg>
           </button>
-          <button class="header__profile profile">
+          <button type="button" class="header__profile profile">
             <div class="profile__user">
               <div class="profile__ava">
                 <img class="profile__img" src="./img/person.png" alt="ava">
@@ -185,17 +186,18 @@
       </header>
       <main class="main">
         <div class="settings">
-          <nav class="settings__navigation navigation-settings">
+                    <nav class="navigation-settings">
             <ul class="navigation-settings__list">
-              <li class="navigation-settings__item">
+
+              <li class="navigation-settings__item ">
                 <a href="#" class="navigation-settings__link ">
                   <svg class="navigation-settings__link-icon">
                     <use xlink:href="img/sprite.svg#edit"></use>
                   </svg>
-                  <p class="navigation-settings__link-text">Payment methods</p>
+                  <p class="navigation-settings__link-text"><span>Personal</span> Information</p>
                 </a>
               </li>
-              <li class="navigation-settings__item">
+              <li class="navigation-settings__item ">
                 <a href="#" class="navigation-settings__link">
                   <svg class="navigation-settings__link-icon">
                     <use xlink:href="img/sprite.svg#password"></use>
@@ -203,31 +205,40 @@
                   <p class="navigation-settings__link-text">Password</p>
                 </a>
               </li>
-              <li class="navigation-settings__item">
-                <a href="#" class="navigation-settings__link active">
+              <li class="navigation-settings__item active">
+                <a href="#" class="navigation-settings__link">
                   <svg class="navigation-settings__link-icon">
                     <use xlink:href="img/sprite.svg#card"></use>
                   </svg>
                   <p class="navigation-settings__link-text">Billing</p>
                 </a>
               </li>
-              <li class="navigation-settings__item">
-                <a href="#" class="navigation-settings__link">
+              <li class="navigation-settings__item ">
+                <a href="#" class="navigation-settings__link ">
                   <svg class="navigation-settings__link-icon">
                     <use xlink:href="img/sprite.svg#notification"></use>
                   </svg>
                   <p class="navigation-settings__link-text">Notifications</p>
                 </a>
               </li>
+              <li class="navigation-settings__item ">
+                <a href="#" class="navigation-settings__link ">
+                  <svg class="navigation-settings__link-icon">
+                    <use xlink:href="img/sprite.svg#verification"></use>
+                  </svg>
+                  <p class="navigation-settings__link-text">Verification</p>
+                </a>
+              </li>
             </ul>
           </nav>
-          <div class="settings__body">
+
+          <form class="settings__body">
             <div class="settings__card">
               <div class="settings__header">
-                <h2 class="settings__title">Personal information</h2>
+                <h2 class="settings__title">Payment methods</h2>
                 <div class="settings__subtitle">Lorem ipsum dolor sit amet consectetur adipiscing.</div>
               </div>
-              <form action="" class="settings__form form-settings">
+              <div class="settings__form form-settings">
                 <div class="form-settings__cards">
                   <div class="form-settings__card options">
                     <div class="options__row">
@@ -240,7 +251,7 @@
                             </div>
                             <div class="options__label-card-type">
                               <span class="options__label-card-num">VISA **** 8092</span>
-                              <span class="options__label-card-date"> Expires on 12/26</span>
+                              <span class="options__label-card-date"> Expires on 12/26</span>
                             </div>
                           </div>
                         </label>
@@ -261,7 +272,7 @@
                             </div>
                             <div class="options__label-card-type">
                               <span class="options__label-card-num">Mastercard **** 8092</span>
-                              <span class="options__label-card-date"> Expires on 12/26</span>
+                              <span class="options__label-card-date"> Expires on 12/26</span>
                             </div>
                           </div>
                         </label>
@@ -282,7 +293,7 @@
                             </div>
                             <div class="options__label-card-type">
                               <span class="options__label-card-num">American Express **** 8092</span>
-                              <span class="options__label-card-date"> Expires on 12/26</span>
+                              <span class="options__label-card-date"> Expires on 12/26</span>
                             </div>
                           </div>
                         </label>
@@ -294,55 +305,68 @@
                       </div>
                     </div>
                   </div>
-                  <button class="form-settings__cards-add">
+                  <button type="button" class="form-settings__cards-add">
                     <img class="form-settings__cards-add-icon" src="./img/add.png" alt="add">
-                    <span class="form-settings__cards-add-text">Add a new payment method</span>
+                    <span class="form-settings__cards-add-text">Add a new payment method</span>
                   </button>
                 </div>
-                <div class="settings__header">
-                  <h2 class="settings__title">Basic information</h2>
+                <div class="settings__header settings__header--address">
+                  <h2 class="settings__title">Billing address</h2>
                   <div class="settings__subtitle">Lorem ipsum dolor sit amet consectetur adipiscing.
                   </div>
                 </div>
-                <div class="form-settings__item">
-                  <div class="form-settings__label">
-                    <svg class="form-settings__label-icon">
-                      <use xlink:href="img/sprite.svg#user"></use>
-                    </svg>
-                    <span class="form-settings__label-text">Full name</span>
+                <div class="form-settings__items">
+                  <div class="form-settings__item">
+                    <div class="form-settings__label">
+                      <svg class="form-settings__label-icon">
+                        <use xlink:href="img/sprite.svg#user"></use>
+                      </svg>
+                      <span class="form-settings__label-text">Full name</span>
+                    </div>
+                    <div class="form-settings__input-wrapper">
+                      <input type="text" class="form-settings__input" value="John Carter">
+                    </div>
                   </div>
-                  <input type="text" class="form-settings__input" value="John Carter">
-                </div>
-                <div class="form-settings__item">
-                  <div class="form-settings__label">
-                    <svg class="form-settings__label-icon">
-                      <use xlink:href="img/sprite.svg#dashboard"></use>
-                    </svg>
-                    <span class="form-settings__label-text">Address</span>
+                  <div class="form-settings__item">
+                    <div class="form-settings__label">
+                      <svg class="form-settings__label-icon">
+                        <use xlink:href="img/sprite.svg#dashboard"></use>
+                      </svg>
+                      <span class="form-settings__label-text">Address</span>
+                    </div>
+                    <div class="form-settings__input-wrapper">
+                      <input type="text" class="form-settings__input" value="601 4th St #103">
+                    </div>
                   </div>
-                  <input type="text" class="form-settings__input" value="601 4th St #103">
-                </div>
-                <div class="form-settings__item">
-                  <div class="form-settings__label">
-                    <svg class="form-settings__label-icon">
-                      <use xlink:href="img/sprite.svg#address"></use>
-                    </svg>
-                    <span class="form-settings__label-text">State</span>
+                  <div class="form-settings__item">
+                    <div class="form-settings__label">
+                      <svg class="form-settings__label-icon">
+                        <use xlink:href="img/sprite.svg#address"></use>
+                      </svg>
+                      <span class="form-settings__label-text">State</span>
+                    </div>
+                    <div class="form-settings__input-wrapper">
+                      <input type="text" class="form-settings__input" value="Los Angeles">
+                    </div>
                   </div>
-                  <input type="text" class="form-settings__input" value="Los Angeles">
-                </div>
-                <div class="form-settings__item">
-                  <div class="form-settings__label">
-                    <svg class="form-settings__label-icon">
-                      <use xlink:href="img/sprite.svg#email"></use>
-                    </svg>
-                    <span class="form-settings__label-text">Zip code</span>
+                  <div class="form-settings__item">
+                    <div class="form-settings__label">
+                      <svg class="form-settings__label-icon">
+                        <use xlink:href="img/sprite.svg#email"></use>
+                      </svg>
+                      <span class="form-settings__label-text">Zip code</span>
+                    </div>
+                    <div class="form-settings__input-wrapper">
+                      <input type="text" class="form-settings__input" value="90001">
+                    </div>
                   </div>
-                  <input type="text" class="form-settings__input" value="90001">
                 </div>
-              </form>
+
+
+              </div>
             </div>
-          </div>
+            <button type="button" class="settings__button button">Save</button>
+          </form>
         </div>
       </main>
     </div>

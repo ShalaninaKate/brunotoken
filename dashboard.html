@@ -11,6 +11,7 @@
   <script defer src="js/main.js"></script>
 </head>
 
+
 <body>
   <div class="wrapper">
 
@@ -20,7 +21,7 @@
       <div class="sidebar__logo-container">
         <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
       </div>
-      <button class="sidebar__header-btn js-side-toggle">
+      <button type="button" class="sidebar__header-btn js-side-toggle">
         <svg class="sidebar__header-btn-icon sidebar__header-btn-icon--left">
           <use xlink:href="img/sprite.svg#arrow"></use>
         </svg>
@@ -152,16 +153,16 @@
         <a href="#" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
         <div class="header__text-block">
           <h1 class="header__title">Dashboard</h1>
-          <p class="header__text">We support: USDT TRON, USDT BSC, TRX, BNB, BTC, BRT</p>
+          <p class="header__text">We support: USDT TRON, USDT BSC, TRX, BNB, BTC, BRT</p>
         </div>
 
         <div class="header__actions">
-          <button class="header__notification notification">
+          <button type="button" class="header__notification notification">
             <svg class="notification__icon">
               <use xlink:href="img/sprite.svg#notification"></use>
             </svg>
           </button>
-          <button class="header__currency-selector currency-selector">
+          <button type="button" class="header__currency-selector currency-selector">
             <span class="currency-selector__text">
               BRT
             </span>
@@ -169,7 +170,7 @@
               <use xlink:href="img/sprite.svg#arrow"></use>
             </svg>
           </button>
-          <button class="header__profile profile">
+          <button type="button" class="header__profile profile">
             <div class="profile__user">
               <div class="profile__ava">
                 <img class="profile__img" src="./img/person.png" alt="ava">
@@ -194,7 +195,7 @@
                 <use xlink:href="img/sprite.svg#heart"></use>
               </svg>
               <label class="balance-info__label">Total Balance</label>
-              <button class="balance-info__btn">
+              <button type="button" class="balance-info__btn">
                 <svg class="balance-info__dots">
                   <use xlink:href="img/sprite.svg#dots"></use>
                 </svg>
@@ -218,8 +219,8 @@
               <svg class="balance-info__icon balance-info__icon--depo">
                 <use xlink:href="img/sprite.svg#depo"></use>
               </svg>
-              <label class="balance-info__label">In Depo</label>
-              <button class="balance-info__btn">
+              <label class="balance-info__label">In Depo</label>
+              <button type="button" class="balance-info__btn">
                 <svg class="balance-info__dots">
                   <use xlink:href="img/sprite.svg#dots"></use>
                 </svg>
@@ -243,7 +244,7 @@
                 <use xlink:href="img/sprite.svg#bag"></use>
               </svg>
               <label class="balance-info__label">Crowdfunding dividends</label>
-              <button class="balance-info__btn">
+              <button type="button" class="balance-info__btn">
                 <svg class="balance-info__dots">
                   <use xlink:href="img/sprite.svg#dots"></use>
                 </svg>
@@ -267,15 +268,15 @@
                 <use xlink:href="img/sprite.svg#exchange"></use>
               </svg>
               <label class="balance-info__label">Wallet Address</label>
-              <button class="balance-info__btn">
+              <button type="button" class="balance-info__btn">
                 <svg class="balance-info__dots">
                   <use xlink:href="img/sprite.svg#dots"></use>
                 </svg>
               </button>
             </div>
             <div class="balance-info__address">
-              <span class="balance-info__address-text">0×24asda5s7da5s7fasf24aa1</span>
-              <button class="balance-info__address-copy">
+              <span class="balance-info__address-text">0x24asda5s7da5s7fasf24aa1</span>
+              <button type="button" class="balance-info__address-copy">
                 <svg class="balance-info__address-copy-icon">
                   <use xlink:href="img/sprite.svg#copy"></use>
                 </svg>
@@ -307,10 +308,10 @@
                 <div class="chart-section__legend">
                   <span class="chart-section__legend-item chart-section__legend-item--revenue">Revenue</span>
                   <span class="chart-section__legend-item chart-section__legend-item--expenses">Expenses</span>
-                  <button class="chart-section__calendar calendar">
+                  <button type="button" class="chart-section__calendar calendar">
                     <img class="calendar__icon" src="./img/svg/date.svg" alt="">
 
-                    <span class="calendar__date">Jan 2024 — Dec 2024</span>
+                    <span class="calendar__date">Jan 2024 - Dec 2024</span>
                     <svg class="calendar__arrow">
                       <use xlink:href="img/sprite.svg#arrow"></use>
                     </svg>
@@ -335,12 +336,12 @@
             </div>
             <div class="dashboard-analytics__wallet wallet-actions">
               <div class="wallet-actions__buttons">
-                <button class="wallet-actions__button button">Send</button>
-                <button class="wallet-actions__button button button--blue">Recieve</button>
-                <button class="wallet-actions__button button button--blue">Swap</button>
+                <button type="button" class="wallet-actions__button button">Send</button>
+                <button type="button" class="wallet-actions__button button button--blue">Recieve</button>
+                <button type="button" class="wallet-actions__button button button--blue">Swap</button>
               </div>
               <div class="wallet-actions__assets assets">
-                <h2 class="assets__title">My actives</h2>
+                <h2 class="assets__title">My actives</h2>
                 <ul class="assets__items">
                   <li class="assets__item">
                     <div class="assets__item-crypto">
@@ -481,7 +482,7 @@
           <div class="dashboard-analytics__transactions transactions">
             <div class="transactions__header">
               <h2 class="transactions__title">Transactions History</h2>
-              <button class="transactions__calendar calendar">
+              <button type="button" class="transactions__calendar calendar">
                 <img class="calendar__icon" src="./img/svg/date.svg" alt="">
                 <span class="calendar__date">Jan 2024</span>
                 <svg class="calendar__arrow">
@@ -628,7 +629,7 @@
                 </div>
               </div>
             </div>
-            <button class="transactions__all">
+            <button type="button" class="transactions__all">
               All Transactions
             </button>
           </div>

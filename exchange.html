@@ -11,6 +11,7 @@
   <script defer src="js/main.js"></script>
 </head>
 
+
 <body>
   <div class="wrapper">
 
@@ -20,7 +21,7 @@
       <div class="sidebar__logo-container">
         <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
       </div>
-      <button class="sidebar__header-btn js-side-toggle">
+      <button type="button" class="sidebar__header-btn js-side-toggle">
         <svg class="sidebar__header-btn-icon sidebar__header-btn-icon--left">
           <use xlink:href="img/sprite.svg#arrow"></use>
         </svg>
@@ -153,17 +154,17 @@
         <div class="header__text-block">
           <h1 class="header__title">Exchange</h1>
           <p class="header__text">Sapien elit malesuada nibh enim amet nisi. Diam sagittis nec odio mauris nisl rhoncus
-            dis. Habitasse duis venenatis nisl viverra eu. Et id nunc mattis quam sapien egestas arcu. Tellus sed at
+            dis. Habitasse duis venenatis nisl viverra eu. Et id nunc mattis quam sapien egestas arcu. Tellus sed at
             eget cursus.</p>
         </div>
 
         <div class="header__actions">
-          <button class="header__notification notification">
+          <button type="button" class="header__notification notification">
             <svg class="notification__icon">
               <use xlink:href="img/sprite.svg#notification"></use>
             </svg>
           </button>
-          <button class="header__currency-selector currency-selector">
+          <button type="button" class="header__currency-selector currency-selector">
             <span class="currency-selector__text">
               BRT
             </span>
@@ -171,7 +172,7 @@
               <use xlink:href="img/sprite.svg#arrow"></use>
             </svg>
           </button>
-          <button class="header__profile profile">
+          <button type="button" class="header__profile profile">
             <div class="profile__user">
               <div class="profile__ava">
                 <img class="profile__img" src="./img/person.png" alt="ava">
@@ -211,7 +212,7 @@
                 <h3 class="order-form__title">Token Information</h3>
                 <div class="order-form__items">
                   <div class="order-form__item form__item">
-                    <button class="form__control form-control ">
+                    <button type="button" class="form__control form-control ">
                       <p class="form-control__text">Asset</p>
                       <svg class="form-control__arrow">
                         <use xlink:href="img/sprite.svg#arrow"></use>
@@ -219,7 +220,7 @@
                     </button>
                   </div>
                   <div class="order-form__item form__item">
-                    <button class="form__control form-control ">
+                    <button type="button" class="form__control form-control ">
                       <p class="form-control__text">Network</p>
                       <svg class="form-control__arrow">
                         <use xlink:href="img/sprite.svg#arrow"></use>
@@ -235,8 +236,7 @@
                 </div>
               </div>
             </div>
-
-            <button class="order-form__button button">Create Order</button>
+            <button type="button" class="order-form__button button">Create Order</button>
           </form>
         </div>
       </main>
